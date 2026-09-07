@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveSplit Playground</title>
+  <script type="module" crossorigin src="/assets/index-C1kdCdPS.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Owl0LnPM.css">
+</head>
+<body>
+    <section class="sect_main">
+        <div class="container">
+            <div class="flex">
+                <input type="file" name="splits_input" id="splits_input">
+                <select id="select_code">
+                    <option value="none">Select code</option>
+                    <option value="runs">Time of run/subsplit</option>
+                    <option value="moving_average">Moving average</option>
+                    <option value="weighted_moving_average">Weighted moving average</option>
+                    <option value="attempts_since_gold">Attempts since gold</option>
+                    <option value="average_vs_gold">Difference between average and gold</option>
+                    <option value="reset_count">Reset count</option>
+                    <option value="reset_percentage">Reset percentage</option>
+                    <option value="playtime">Playtime</option>
+                </select>
+            </div>
+            <div class="flex textarea_flex">
+                <textarea id="script_textarea"></textarea>
+                <button id="apply_code">Apply</button>
+            </div>
+            <div id="output"></div>
+            <canvas id="canvas"></canvas>
+        </div>
+    </section>
+</body>
+</html>
